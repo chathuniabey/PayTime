@@ -1,0 +1,126 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-image: url("images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container{
+    width: 350px;
+    display: flex; 
+    flex-direction: column; 
+    padding: 0 15px 0 15px; 
+}
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 45px;
+    width:87%;
+    border:none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 42px;
+    background: rgba(255, 255, 255, 0.1);
+} 
+
+i{
+    position: relative;
+    top: -31px;
+    left:17px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.remember-forget{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    
+}
+
+.remember-forget label input {
+    accent-color: #fff;
+    margin-right: 3px;
+    
+  }
+
+.remember-forget a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+/*****forget password undeline*****/
+.remember-forget a:hover {
+    text-decoration: underline;
+} 
+
+
+.login-signin {
+    font-size: small;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0 5px;
+    
+}
+
+.login-signin a{
+    color: rgb(193, 244, 223);
+    text-decoration: underline;
+}
+
