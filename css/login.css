@@ -83,31 +83,30 @@ i{
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
-.remember-forget{
-    display:flex;
-    flex-direction: row;
+.two-col{
+    display: flex;
     justify-content: space-between;
+    color: #fff;
     font-size: small;
-    color: #fff;
-    
+    margin-top: -10px;
 }
 
-.remember-forget label input {
-    accent-color: #fff;
-    margin-right: 3px;
-    
-  }
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
 
-.remember-forget a {
-    color: #fff;
+.two label a{
     text-decoration: none;
-    
+    color: #fff;
 }
 
-/*****forget password undeline*****/
-.remember-forget a:hover {
+.two label a:hover{
     text-decoration: underline;
-} 
+}
+
+
+
 
 
 .login-signin {
