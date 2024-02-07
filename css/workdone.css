@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Match font family with employee CSS */
+    background-color: #1abc9c; /* Adjust background color to match employee CSS */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 200px; /* Adjust the top margin as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #009444; /* Match color with employee CSS */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #0c0c0c; /* Adjust font color */
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px; /* Adjust padding */
+    margin-bottom: 10px; /* Adjust margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #16a085; /* Match background color with employee CSS */
+    color: #fff; /* Adjust font color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+    background-color: #16a085; /* Adjust hover color */
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Full width for mobile screens */
+    }
+    .form-group {
+        margin-bottom: 10px; /* Adjust spacing for mobile */
+    }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disp');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 10px;
+    background: #1abc9c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(#a5d5bb, #32d67f, #009444);
+}
+
+.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    margin-bottom: 30px; /* Increased space between detail fields */
+    width: calc(50% - 10px);
+}
+
+.input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px; /* Increased space between label and input */
+}
+
+.input-box input,
+.input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.save-button,
+.cancel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.save-button {
+    background-color: #16a085;
+    color: #fff;
+}
+
+.cancel-button {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.save-button:hover {
+    background-color: #007a3d;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .input-box {
+        width: 100%;
+    }
+    .title {
+        font-size: 20px;
+    }
+}

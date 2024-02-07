@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Page left side-->
+        <div class="left">
+            <!-- Background image -->
+            <img src="../images/home.jpg" alt="Background Image">
+        </div>
+        
+        <!--Page Right side-->
+        <div class="right">
+            <div class="form-container">
+                  <h2>Welcome Back</h2>
+                  <p>Sign in to your account and start managing your tasks.</p>
+
+                  <!--Login form-->
+                  <form id="loginForm">
+
+                      <!--Email-->
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" placeholder="Your email" required>
+                      </div>
+
+                      <!--Password-->
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" id="password" name="password" placeholder="Your password" required>
+                      </div>
+
+                      <div class="form-group">
+                            <!--Remember me-->
+                            <div class="remember-me-checkbox">
+                                <input type="checkbox" id="rememberMe" name="rememberMe">
+                                <label for="rememberMe">Remember me</label>
+                            </div> 
+                            <!--Forget password-->
+                            <a href="../html/forgetpassword.html" class="forgot-password-link">Forgot password?</a>
+
+                            
+                       </div> 
+
+                      <!--Sign in button-->
+                      <div class="form-group">
+                          <button type="button" onclick="signIn()">Sign In</button>
+                      </div>
+                  </form>
+                  <!--Login Sign up page-->
+                  <p>No Account? <a href="signin.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

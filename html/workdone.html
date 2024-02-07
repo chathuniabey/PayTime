@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work Done</title>
+    <link rel="stylesheet" href="../css/employee.css"> <!-- Use the same CSS file as the employee page -->
+    <link rel="stylesheet" href="../css/signin.css"> <!-- Include the sign-in styles -->
+    <link rel="stylesheet" href="../css/Menu.css">
+</head>
+<body>
+
+    <form id="workdone-form" class="employeeinfo-form">
+        <div class="title">Work Done</div>
+        
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Name:</span>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Date:</span>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Work Capacity:</span>
+                <input type="text" id="work_capacity" name="work_capacity" placeholder="Enter your Work Capacity" required>
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="submit" class="save-button">Submit</button>
+            <button type="button" class="cancel-button">Cancel</button>
+        </div>
+    </form>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="../images/logo.png" alt=""></i>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <!-- <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="../images/profile.png" alt="" class="profile" />
+      </div>  -->
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+
+        <!--Menu file-->
+        <ul class="menu_items">
+          <div class="menu_title menu_file"></div>
+          <!--Employee Information-->
+          <li class="item">
+            <a href="employee.html" class="nav_link"> <!-- Change the href attribute to "employee.html" -->
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Employee Information</span>
+            </a>
+          </li>
+         
+          <!--Deduction Category-->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Deduction category</span>
+            </a>
+          </li>
+        </ul>
+
+        <!--Menu data-->
+        <ul class="menu_items">
+          <div class="menu_title menu_data"></div>
+          <li class="item">
+            <a href="attendance.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Attendance</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="workdone.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-medal"></i>
+              </span>
+              <span class="navlink">Workdone</span>
+            </a>
+          </li>
+          
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Pay deduction</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">Pay addition</span>
+            </a>
+          </li>
+        </ul>
+
+
+        <!--Menu reports-->
+        <ul class="menu_items">
+          <div class="menu_title menu_reports"></div>
+          <!--payslip-->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Payslip</span>
+            </a>
+          </li>
+         
+          <!--paysheet-->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Paysheet</span>
+            </a>
+          </li>
+
+           <!--summary-->
+           <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Summary</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</
+
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="../js/Menu.js"></script>
+    <script src="../js/workdone.js"></script>   
+</body>
+</html>
